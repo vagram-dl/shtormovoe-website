@@ -1,0 +1,443 @@
+
+
+
+
+.item{
+	text-align: center;
+	max-width: 300px;
+	transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.item:hover{
+	transform: translateY(-6px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.photo{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 8px;
+	display: block;
+}
+
+@media (max-width:480px){
+	.photo{
+		height: 200px;
+	}
+}
+
+figcaption{
+	margin-top: 8px;
+	font-size: 1rem;
+	color: #444;
+	font-style: italic;
+}
+
+.gallery{
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+body{
+	margin: 0;
+	line-height: 1.6;
+	font-family: Arial,sans-serif;
+	padding-top: 64px;
+}
+
+html{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+*,*:before,*after{
+	box-sizing: inherit;
+}
+
+img,video{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+section,header,footer{
+	padding:20px;
+}
+
+@media(max-width:1024px){
+	body{
+		font-size: 16px;
+	}
+}
+
+@media(max-width:768px){
+	body{
+		font-size: 15px;
+	}
+
+	.gallery{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.navbar ul{
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+}
+
+@media(max-width:480px){
+	body{
+		font-size: 14px;
+	}
+
+	h1{
+		font-size: 24px;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.navbar ul{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.navbar ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 28px;
+	margin: 0;
+	padding:12px 20px;
+}
+
+.navbar a {          
+  text-decoration: none;     
+  font-weight: 600;          
+  font-size: 18px;           
+  padding: 8px 12px;         
+  border-radius: 6px;        
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover{
+	background: #ffeb3b;
+	color: #1e90ff;
+}
+
+.navbar a.active{
+	background: #ffffff;
+	color: #1e90ff;
+}
+
+@media (max-width:360px){
+	body {font-size: 13px;}
+	h1 {font-size: 20px;}
+}
+
+.hero{
+	color: #fff;
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: url(EDIPNAJln85oDEgl1dleY8CNU98-1920.jpg) no-repeat center/cover;
+}
+
+.hero__content{
+	position: relative;
+	max-width: 700px;
+	padding: 20px;
+}
+
+.hero h1{
+	font-size: 38px;
+	margin-bottom: 20px;
+}
+
+.hero p{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.btn{
+	display: inline-block;
+	padding: 14px 28px;
+	background: #ffeb3b;
+	color: #1e90ff;
+	font-weight: bold;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: background 0.3s,transform 0.2s;
+}
+
+.btn:hover{
+	background: #ffd600;
+	transform: scale(1.05);
+}
+
+.hero h1{
+	font-size: 48px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.hero p{
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+#info{
+	background: #f0f8ff;
+	padding: 60px 20px;
+}
+
+#info h2{
+	font-size: 32px;
+	margin-bottom: 20px;
+	color: #1e90ff;
+	text-align: center;
+}
+
+#info p{
+	max-width: 900px;
+	margin: 0 auto 15px auto;
+	text-align: justify;
+}
+
+@media(max-width:768px){
+	.info p{
+		max-width: 100%;
+	}
+}
+
+footer{
+	background:  #1e90ff;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 14px;
+}
+
+footer a{
+	color: #ffeb3b;
+	text-decoration: none;
+	margin:0 8px;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+#contacts{
+	background: #f9f9f9;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+#contacts h2{
+	font-size: 32px;
+	margin-bottom: 20px;
+	color: #1e90ff;
+}
+
+#contacts p{
+	font-size: 18px;
+	margin: 8px 0;
+	color: #333;
+}
+
+#contacts a{
+	color: #1e90ff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+#contacts a:hover{
+	color: #ff9800;
+}
+
+#about{
+	background: #f0f8ff;
+	padding: 40px 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	max-width: 800px;
+	margin: 40px auto;
+	text-align: center;
+}
+
+#about h2{
+	font-size: 28px;
+  color: #0088cc;
+  margin-bottom: 20px;
+}
+
+#about p{
+	font-size: 20px;
+	line-height: 1.7;
+	max-width: 900px;
+	margin: 0 auto 30px auto;
+	color: #333;
+	text-align: justify;
+}
+
+#about ul{
+	list-style: none;
+	padding: 0;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#about-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#about li{
+	display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+  background: #eaf6ff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+#about-list .icon {
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+#about-list .text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.btn-telegram{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #00BFA6;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 6px;
+	transition: transform 0.2s,box-shadow 0.2s;
+}
+
+.btn-telegram:hover{
+	transform: scale(1.05);
+	box-shadow: 0 6px 15px rgba(0, 136, 204, 0.4);
+}
+
+@media{
+	.prallax{
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.offer {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.offer h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #0088cc;
+}
+
+.offer h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.offer .subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 12px;
+}
+
+.amenities .item {
+  background: #eaf6ff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owner-quote{
+	font-style: italic;
+	color: #666;
+	margin: 20px 0;
+}
+
+
+
+
+
+
